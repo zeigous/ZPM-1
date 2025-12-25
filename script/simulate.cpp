@@ -17,8 +17,8 @@ main(int argc, char** argv, char** env) {
 
   while (sim_time < MAX_SIM_TIME && !contextp->gotFinish()) {
     if(sim_time % 2 == 1) {
-        test->sync_rst = sim_time < 3;
-        test->clk_en = sim_time > 5;
+        test->rst = sim_time < 3;
+        test->clkEn = sim_time > 5;
     }
 
     //-----------------------------

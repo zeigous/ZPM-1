@@ -1,6 +1,5 @@
-`include "../common/common.svh"
 
-module PreDecode(
+module Decode(
     input clk,
     input clkEn,
     input rst
@@ -14,4 +13,5 @@ module PreDecode(
         end
     end
     
-endmodule
+
+endmodule : Decode

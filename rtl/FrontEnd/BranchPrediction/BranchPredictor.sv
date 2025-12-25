@@ -1,4 +1,3 @@
-`include "../../common/common.svh"
 
 module BranchPredictor (
     input clk,
@@ -6,7 +5,7 @@ module BranchPredictor (
     input rst,
 
     // PC and Update Signals
-    input wire [31:0] pc,
+    input wire [63:0] pc,
     
     input wire update,
     input wire result,

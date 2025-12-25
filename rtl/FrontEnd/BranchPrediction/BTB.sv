@@ -1,4 +1,3 @@
-`include "../../common/common.svh"
 
 module BTB (
     input clk,
@@ -6,15 +5,15 @@ module BTB (
     input rst,
 
     // inputs for predicting
-    input wire [31:0] pc,
+    input wire [63:0] pc,
 
     // inputs for updating
     input wire update,
-    input wire [31:0] destIn,
+    input wire [63:0] destIn,
     input wire unconditionalIn,
 
     // prediction out
-    output wire [31:0] destOut,
+    output wire [63:0] destOut,
     output wire validOut,
     output wire unconditionalOut
 

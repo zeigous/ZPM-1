@@ -4,3 +4,4 @@ tmp/*
 .project
 .settings/
 .vscode/settings.json
+obj_dir/
